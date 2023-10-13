@@ -14,7 +14,7 @@ class StripeController extends Controller
 
     public function Payment(Request $request)
     {
-        \Stripe\Stripe::setApikey('sk_test_51MpgfjCoRbwLjXYjdSkK3F86JPfwJoIirgoGNYUtKnURlBHISaaWhEgP5iN7zm52hnUHertwT7KwpiH83gfjbKXW0064Ntqc2u');
+        \Stripe\Stripe::setApikey('');
 
         $prodcutname = $request->productname;
         $total = $request->total * 100;
